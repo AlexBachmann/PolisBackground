@@ -1,0 +1,66 @@
+@import "./src/assets/private/sass/base";
+
+.accordion-item
+	&.item-container
+		background: white
+		border-radius: 2px
+		padding: 5px
+
+	.item-header
+		position: relative
+		padding-left: 75px
+		cursor: pointer
+
+		h3
+			font-weight: bold
+			font-size: 18px
+			margin: 0
+
+		h4
+			font-weight: 300
+			font-size: 16px
+			margin: 0
+
+		.item-icon
+			top: 0px
+			left: 5px
+			+icon($icon: icon-quote, $rootelementposition: absolute)
+
+	.actions
+		margin-top: 5px
+		text-align: center
+
+		a
+			background: $polis-violett
+			margin: 0
+
+	.text
+		margin-top: 10px
+	table
+		width: 100%
+		border-spacing: 0
+
+		thead
+			tr
+				background: $grey-light
+
+				th
+					text-align: left
+					text-transform: uppercase
+					padding: 3px 5px
+					border-top: 1px solid $grey-dark
+					border-bottom: 1px solid $grey-dark
+
+					&.center
+						text-align: center
+
+		tr
+			&:nth-child(even)
+				background: $grey-light
+
+			td
+				padding: 3px 5px
+				border-bottom: 1px solid $grey-light-highlight
+
+				&.center
+					text-align: center

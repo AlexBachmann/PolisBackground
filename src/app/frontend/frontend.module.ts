@@ -24,7 +24,7 @@ import { UiModule } from '../shared/ui/ui.module';
   declarations: [
   	FrontendComponent,
   	HeaderComponent,
-  	FooterComponent
+  	FooterComponent,
   ]
 })
 export class FrontendModule { }

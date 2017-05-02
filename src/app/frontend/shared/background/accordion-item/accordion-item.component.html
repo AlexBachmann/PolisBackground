@@ -1,0 +1,13 @@
+<div class="item-container accordion-item">
+	<div class="item-header" (click)="toggle()">
+		<div class="item-icon"></div>
+		<h3>{{item.title}}</h3>
+		<h4>{{item.source}}</h4>
+	</div>
+	<tekkl-vertical-slide [open]="open.toString()">
+		<div class="text" [innerHtml]="text"></div>
+		<div *ngIf="item.url" class="actions">
+			<a class="button" href="{{item.url}}" target="_blank">Mehr</a>
+		</div>
+	</tekkl-vertical-slide>
+</div>

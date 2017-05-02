@@ -1,0 +1,35 @@
+@import "./src/assets/private/sass/base";
+.url-bar-container
+	background: $polis-violett
+	width: 100%
+	height: 50px
+	
+
+	.url-bar
+		position: relative
+		padding-left: 350px
+		@media (max-width: 767px)
+			padding-left: 50px
+	.logo-large
+		position: absolute
+		left: 0
+		top: 10px
+		+icon($icon: polis-logo-white, $rootelementposition: absolute)
+		@media (max-width: 767px)
+			display: none
+
+	.logo-small
+		+icon($icon: polis-icon-white, $rootelementposition: absolute)
+		left: 0
+		top: 10px
+		display: none
+		@media (max-width: 767px)
+			display: block
+
+	input
+		margin-top: 9px
+		padding: 7px
+		border-radius: 2px
+		border: none
+		color: $grey
+		width: 100%

@@ -1,0 +1,14 @@
+<div class="offcanvas-container" [class.open]="backgroundService.isOffCanvasOpen()">
+	<div class="close" (click)="backgroundService.toggleOffCanvas('closed')">Schließen</div>
+	<div class="logo-container"><div class="logo"></div></div>
+
+	<p>Wir haben zu diesem Artikel {{count}} Hintergrundinfos gefunden.</p>
+
+	<div class="background-items">
+		<div *ngFor="let item of items" class="item">
+			<tekkl-video-item *ngIf="item.type == 'video'" [item]="item"></tekkl-video-item>
+			<tekkl-link-item *ngIf="item.type == 'link'" [item]="item"></tekkl-link-item>
+			<tekkl-accordion-item *ngIf="item.type == 'accordion'" [item]="item"></tekkl-accordion-item>
+		</div>
+	</div>
+</div>

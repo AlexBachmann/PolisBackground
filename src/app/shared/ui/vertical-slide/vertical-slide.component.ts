@@ -29,7 +29,7 @@
  	],
  })
  export class VerticalSlideComponent implements OnInit {
- 	@Input() open = false;
+ 	@Input() open = 'false';
  	constructor() { }
 
  	ngOnInit() {

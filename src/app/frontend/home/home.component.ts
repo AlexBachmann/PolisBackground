@@ -6,18 +6,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-import { Component, OnInit } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
-})
-export class HomeComponent implements OnInit {
+ @Component({
+ 	selector: 'app-home',
+ 	templateUrl: './home.component.html',
+ 	styleUrls: ['./home.component.sass']
+ })
+ export class HomeComponent implements OnInit {
+ 	private url: string = 'http://www.zeit.de';
+ 	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+ 	ngOnInit() {
+ 	}
+ 	onUrlChange(url){
+ 		this.url = url;
+ 	}
+ }

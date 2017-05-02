@@ -50,3 +50,14 @@ $flex: false !global
 @if $flex {
   @include foundation-flex-classes;
 }
+
+$breakpoints: (
+	small: 0,
+	mobile: 480px,
+	medium: 640px,
+	large: 768px,
+	xlarge: 1280,
+	xxlarge: 1440px,
+);
+
+$breakpoint-classes: (small mobile medium large xlarge xxlarge);

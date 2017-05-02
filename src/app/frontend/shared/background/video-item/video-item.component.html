@@ -1,0 +1,12 @@
+<div class="item-container">
+	<div class="item-header" (click)="toggle()">
+		<div class="item-icon"></div>
+		<h3>{{item.title}}</h3>
+		<h4>{{item.source}}</h4>
+	</div>
+	<tekkl-vertical-slide [open]="open.toString()">
+		<div class="iframe-container">
+			<iframe [src]="safeUrl" frameborder="0"></iframe>
+		</div>
+	</tekkl-vertical-slide>
+</div>

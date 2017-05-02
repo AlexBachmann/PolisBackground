@@ -1,0 +1,26 @@
+@import "./src/assets/private/sass/base";
+.item-container
+	background: white
+	border-radius: 2px
+	padding: 5px
+
+	.item-header
+		position: relative
+		padding-left: 75px
+		cursor: pointer
+
+		h3
+			font-weight: bold
+			font-size: 18px
+			margin: 0
+
+		h4
+			font-weight: 300
+			font-size: 16px
+			margin: 0
+
+		.item-icon
+			top: 0px
+			left: 5px
+			+icon($icon: icon-link, $rootelementposition: absolute)
+				transform: scale(0.75)
